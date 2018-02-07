@@ -1,0 +1,15 @@
+
+import math
+ 
+for _ in range (input()) :
+	n, k, s = map(int, raw_input().split()) 
+	if n < k :
+		print "-1"
+	elif n-k < k and s >= 7 :
+		print "-1"
+	else :
+		t = k*s
+		if t%n == 0 :
+			print t/n
+		else :
+			print t/n + 1
